@@ -5,6 +5,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ChatPage from "./pages/ChatPage";
+import SignUpPage from "./pages/SignUpPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +17,8 @@ function App() {
         <Routes>
           <Route path="/" Component={HomePage} />
           <Route path="/chats" Component={ChatPage} />
+          <Route path="/SignUp" Component={SignUpPage}/>
+          <Route path="/Login" Component={LoginPage}/>
         </Routes>
       </div>
     </>
